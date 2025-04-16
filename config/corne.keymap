@@ -32,7 +32,7 @@
                 <&kp LEFT_BRACKET>,
                 <&kp LEFT_BRACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
 
         close_bracket: close_bracket {
@@ -44,7 +44,7 @@
                 <&kp RIGHT_BRACKET>,
                 <&kp RIGHT_BRACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
