@@ -119,10 +119,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TILDE  &mouse_scroll_mod_tap SCRL_UP MOVE_Y(20)     &mouse_move_mod_tap MOVE_UP MOVE_Y(500)     &mkp MB1                                    &mkp RCLK  &none     &none   &kp N7  &kp N8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
-&trans     &mouse_move_mod_tap MOVE_LEFT MOVE_X(-500)   &mouse_move_mod_tap MOVE_DOWN MOVE_Y(-500)  &mouse_move_mod_tap MOVE_RIGHT MOVE_X(500)  &none      &none     &none   &kp N4  &kp N5  &kp N6        &none         &none
-&trans     &mouse_scroll_mod_tap SCRL_DOWN MOVE_Y(-20)  &none                                       &none                                       &none      &none     &none   &kp N1  &kp N2  &kp N3        &none         &none
-                                                                                                    &trans                                      &trans     &trans    &trans  &trans  &trans
+&kp TILDE  &msc SCRL_UP    &mmv MOVE_UP    &mkp MB1         &mkp RCLK  &none     &none   &kp N7  &kp N8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
+&trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none      &none     &none   &kp N4  &kp N5  &kp N6        &none         &none
+&trans     &msc SCRL_DOWN  &msc SCRL_LEFT  &msc SCRL_RIGHT  &none      &none     &none   &kp N1  &kp N2  &kp N3        &none         &none
+                                           &trans           &trans     &trans    &trans  &trans  &trans
             >;
         };
 
