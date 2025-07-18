@@ -89,10 +89,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E                  &kp R  &kp T        &kp Y                     &kp U         &kp I         &kp O    &kp P     &kp LEFT_BRACKET
-&mt LCTRL ESCAPE  &kp A  &kp S  &kp D                  &kp F  &kp G        &kp H                     &kp J         &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C                  &kp V  &kp B        &kp N                     &kp M         &kp COMMA     &kp DOT  &kp FSLH  &kp BACKSLASH
-                                &mt LEFT_ALT LEFT_WIN  &mo 1  &kp SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 2 RETURN  &kp LEFT_WIN
+&kp TAB           &kp Q  &kp W  &kp F                  &kp P  &kp B        &kp J                     &kp L         &kp U                &kp Y    &kp SEMI  &kp LBKT
+&mt LCTRL ESCAPE  &kp A  &kp R  &kp S                  &kp T  &kp G        &kp M                     &kp N         &kp E                &kp I    &kp O     &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C                  &kp D  &kp V        &kp K                     &kp H         &kp COMMA            &kp DOT  &kp FSLH  &kp BSLH
+                                &mt LEFT_ALT LEFT_WIN  &mo 1  &kp SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 2 RETURN  &mt LEFT_WIN RETURN
             >;
         };
 
@@ -133,6 +133,28 @@
 &none   &none       &none         &none         &none       &none               &none       &none                 &none                 &none    &none            &none
                                   &trans        &trans      &trans              &trans      &trans                &trans
             >;
+        };
+
+        gaming_layer {
+            bindings = <
+&kp T  &kp TAB    &kp Q  &kp W    &kp E  &kp R        &kp Y   &kp U   &kp I   &kp O      &kp P    &kp BSPC
+&kp G  &kp LSHFT  &kp A  &kp S    &kp D  &kp F        &kp G   &kp H   &kp J   &kp K      &kp L    &kp ENTER
+&kp I  &kp LCTRL  &kp Z  &kp X    &kp C  &kp V        &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+                         &kp ESC  &mo 5  &kp SPACE    &trans  &trans  &trans
+            >;
+
+            label = "gaming";
+        };
+
+        gaming_layer_1 {
+            bindings = <
+&trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "gaming1";
         };
     };
 
