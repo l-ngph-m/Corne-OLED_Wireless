@@ -30,51 +30,20 @@
             key-positions = <24 32>;
             layers = <1>;
         };
+
+        workspace_1 {
+            bindings = <&kp LA(NUMBER_1)>;
+            key-positions = <37 1>;
+            layers = <0>;
+        };
     };
 
     behaviors {
-        open_bracket: open_bracket {
+        tap_toggle_layer_1: tap_toggle_layer_1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "OPEN_BRACKET";
+            label = "TAP_TOGGLE_LAYER_1";
             #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_PARENTHESIS>,
-                <&kp LEFT_BRACKET>,
-                <&kp LEFT_BRACE>;
-
-            tapping-term-ms = <200>;
-        };
-
-        close_bracket: close_bracket {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CLOSE_BRACKET";
-            #binding-cells = <0>;
-            bindings =
-                <&kp RIGHT_PARENTHESIS>,
-                <&kp RIGHT_BRACKET>,
-                <&kp RIGHT_BRACE>;
-
-            tapping-term-ms = <200>;
-        };
-
-        mouse_scroll_mod_tap: mouse_scroll_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOUSE_SCROLL_MOD_TAP";
-            #binding-cells = <2>;
-            bindings = <&msc>, <&msc>;
-
-            tapping-term-ms = <150>;
-            flavor = "balanced";
-        };
-
-        mouse_move_mod_tap: mouse_move_mod_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "MOUSE_MOVE_MOD_TAP";
-            bindings = <&mmv>, <&mmv>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <150>;
-            flavor = "hold-preferred";
+            bindings = <&sl 1>, <&tog 1>;
         };
     };
 
@@ -89,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F                  &kp P  &kp B        &kp J                     &kp L         &kp U                &kp Y    &kp SEMI  &kp LBKT
-&mt LCTRL ESCAPE  &kp A  &kp R  &kp S                  &kp T  &kp G        &kp M                     &kp N         &kp E                &kp I    &kp O     &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C                  &kp D  &kp V        &kp K                     &kp H         &kp COMMA            &kp DOT  &kp FSLH  &kp BSLH
-                                &mt LEFT_ALT LEFT_WIN  &mo 1  &kp SPACE    &mt LEFT_SHIFT BACKSPACE  &lt 2 RETURN  &mt LEFT_WIN RETURN
+&kp TAB           &kp Q  &kp W  &kp F                  &kp P                &kp B        &kp J          &kp L   &kp U                &kp Y    &kp SEMI  &kp LBKT
+&mt LCTRL ESCAPE  &kp A  &kp R  &kp S                  &kp T                &kp G        &kp M          &kp N   &kp E                &kp I    &kp O     &kp SQT
+&kp LSHFT         &kp Z  &kp X  &kp C                  &kp D                &kp V        &kp K          &kp H   &kp COMMA            &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
+                                &mt LEFT_ALT LEFT_WIN  &tap_toggle_layer_1  &kp SPACE    &kp BACKSPACE  &tog 2  &mt LEFT_WIN RETURN
             >;
         };
 
@@ -130,7 +99,7 @@
             bindings = <
 &trans  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_PLAY_PAUSE    &kp C_NEXT  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &none    &kp PRINTSCREEN  &kp DELETE
 &kp F1  &kp F2      &kp F3        &kp F4        &kp F5      &kp F6              &kp F7      &kp F8                &kp F9                &kp F10  &kp F11          &kp F12
-&none   &none       &none         &none         &none       &none               &none       &none                 &none                 &none    &none            &none
+&none   &none       &none         &none         &none       &none               &none       &none                 &none                 &none    &none            &tog 4
                                   &trans        &trans      &trans              &trans      &trans                &trans
             >;
         };
@@ -150,7 +119,7 @@
             bindings = <
 &trans  &kp N6  &kp N7  &trans  &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &kp N0    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans  &tog 0
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
