@@ -58,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp F                  &kp P                &kp B        &kp J          &kp L   &kp U                &kp Y    &kp SEMI  &kp LBKT
-&mt LCTRL ESCAPE  &kp A  &kp R  &kp S                  &kp T                &kp G        &kp M          &kp N   &kp E                &kp I    &kp O     &kp SQT
-&kp LSHFT         &kp Z  &kp X  &kp C                  &kp D                &kp V        &kp K          &kp H   &kp COMMA            &kp DOT  &kp FSLH  &mt RIGHT_SHIFT BACKSLASH
-                                &mt LEFT_ALT LEFT_WIN  &tap_toggle_layer_1  &kp SPACE    &kp BACKSPACE  &tog 2  &mt LEFT_WIN RETURN
+&kp TAB           &kp Q  &kp W  &kp F                  &kp P  &kp B        &kp J          &kp L         &kp U         &kp Y    &kp SEMI  &kp LBKT
+&mt LCTRL ESCAPE  &kp A  &kp R  &kp S                  &kp T  &kp G        &kp M          &kp N         &kp E         &kp I    &kp O     &kp SQT
+&sk LSHFT         &kp Z  &kp X  &kp C                  &kp D  &kp V        &kp K          &kp H         &kp COMMA     &kp DOT  &kp FSLH  &kp BACKSLASH
+                                &mt LEFT_ALT LEFT_WIN  &sl 1  &kp SPACE    &kp BACKSPACE  &lt 2 RETURN  &kp LEFT_WIN
             >;
         };
 
@@ -73,10 +73,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp GRAVE  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET
-&trans     &kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp LEFT   &kp DOWN       &kp UP    &kp RIGHT             &kp MINUS              &kp EQUAL
-&trans     &kp N6    &kp N7  &kp N8    &kp N9      &kp N0         &none      &none          &none     &none                 &none                  &none
-                             &trans    &trans      &trans         &trans     &trans         &trans
+&kp GRAVE   &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET
+&trans      &kp N1    &kp N2  &kp N3    &kp N4      &kp N5         &kp LEFT   &kp DOWN       &kp UP    &kp RIGHT             &kp MINUS              &kp EQUAL
+&caps_word  &kp N6    &kp N7  &kp N8    &kp N9      &kp N0         &none      &none          &none     &none                 &none                  &none
+                              &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
 
@@ -106,9 +106,9 @@
 
         gaming_layer {
             bindings = <
-&kp T  &kp TAB    &kp Q  &kp W    &kp E  &kp R        &kp Y   &kp U   &kp I   &kp O      &kp P    &kp BSPC
-&kp G  &kp LSHFT  &kp A  &kp S    &kp D  &kp F        &kp G   &kp H   &kp J   &kp K      &kp L    &kp ENTER
-&kp I  &kp LCTRL  &kp Z  &kp X    &kp C  &kp V        &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH
+&kp T  &kp TAB    &kp Q  &kp W    &kp E  &kp R        &kp Y   &kp U   &kp I      &kp O    &kp P     &kp BSPC
+&kp G  &kp LSHFT  &kp A  &kp S    &kp D  &kp F        &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp ENTER
+&kp B  &kp LCTRL  &kp Z  &kp X    &kp C  &kp V        &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &kp ESC  &mo 5  &kp SPACE    &trans  &trans  &trans
             >;
 
